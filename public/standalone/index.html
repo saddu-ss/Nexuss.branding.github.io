@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexuss — Estudio Creativo de Branding & Diseño Estratégico</title>
+  
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de Estilos CSS3 -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. ENCABEZADO Y NAVEGACIÓN SEMÁNTICA
+       ========================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="brand-logo" data-tab-target="inicio" aria-label="Ir a Inicio">
+        <img src="/logo-nexuss.png" alt="Nexuss" style="height: 48px; width: auto; max-width: 180px; object-fit: contain;">
+      </button>
+
+      <nav class="nav-menu">
+        <button class="nav-link" data-tab-target="nosotros">Nosotros</button>
+        <button class="nav-link" data-tab-target="servicios">Servicios</button>
+        <button class="nav-link" data-tab-target="portafolio">Portafolio</button>
+        <button class="nav-link" data-tab-target="contacto">Contacto</button>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <button class="btn-pill-primary" data-tab-target="contacto">
+          <span>Trabajemos juntos</span>
+          <span>↗</span>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cajón de navegación móvil -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <button class="nav-link" data-tab-target="inicio">Inicio</button>
+    <button class="nav-link" data-tab-target="nosotros">Nosotros</button>
+    <button class="nav-link" data-tab-target="servicios">Servicios</button>
+    <button class="nav-link" data-tab-target="portafolio">Portafolio</button>
+    <button class="nav-link" data-tab-target="contacto">Contacto</button>
+  </div>
+
+  <!-- ==========================================
+       2. CONTENIDO PRINCIPAL POR PESTAÑAS
+       ========================================== -->
+  <main class="main-content">
+
+    <!-- ----------------------------------------
+         PESTAÑA 1: INICIO (HOME)
+         ---------------------------------------- -->
+    <section class="tab-pane active" id="tab-inicio">
+      <div class="container" style="padding-top: 1.5rem; padding-bottom: 3rem;">
+        <!-- Canvas Hero Oscuro -->
+        <div class="hero-canvas">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0n511VgbG9Y7Mx3Fw3lmGtLtkwhI-5EMYscviIT8vdVJW7s2qMfrVmzDHjMlSGKz9bASUTHrXs3SuGI5GLGv9oNIUJxt6VtePDPUupYsMPjCSs4Ll4mF8WF_a6EdGsqa6CMJ_cYLsYJLKd3qkoN0G5NpPZGzTEUW3HN3DrdneigDIY5Uw2xFWhZWLr4zyqxCclkfWMyxFNkJz9pOd6p0xVNHW9UzwOBLKCWj-CaGiHvYgNSaSRSzZcQ" alt="Nexuss Studio Hero">
+          <div class="hero-overlay">
+            <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-lemonade);">Nexuss Studio • 2025</span>
+            <h1 class="font-serif" style="font-size: 2.5rem; font-weight: 300; margin-top: 0.25rem;">Branding con propósito, identidad y conexión real.</h1>
+          </div>
+        </div>
+
+        <!-- Declaración y Enlace -->
+        <div class="grid-2" style="align-items: center; margin-top: 3rem;">
+          <div style="border-radius: 24px; overflow: hidden; aspect-ratio: 16/10;">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB35kFuuKUEllsiSI9CjgL9_H3w5g_9q9f0SvIqE1hYqZXpPUx2jM2iVI84FE-jXMCD1UCUBQM8LAhTXHhGPGo4qNNoHU3nyMb5SLUJoA3fpH4U7YjtG50NsH-ixrlXAgGVvRM8pjlSLofbOdieznVZ2fJbtiqoMgDIEMN27JSSsRyP_R55u67GwGnUAKCX38I-cQop6m7tcJLptQ6mILvLgnvFYpdeP3FsExEiw_FtnsARLAvnCgU5Jg" alt="Dirección de arte" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div>
+            <h2 class="font-serif" style="font-size: 2rem; font-weight: 400; line-height: 1.3;">
+              Conectamos marcas con lo que realmente importa en un mundo que necesita conexión.
+            </h2>
+            <p style="margin-top: 1rem; color: var(--color-text-muted); font-size: 0.95rem;">
+              Construimos identidades visuales que trascienden lo estético para convertirse en experiencias sensoriales duraderas y memorables.
+            </p>
+            <div style="margin-top: 1.5rem;">
+              <button class="btn-pill-outline" data-tab-target="contacto">Contáctanos ↗</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección Pilares Lemonade -->
+      <section class="banner-lemonade">
+        <div class="container" style="text-align: center;">
+          <h2 class="font-serif" style="font-size: 2.75rem; font-weight: 400; max-width: 900px; margin: 0 auto 3rem auto; line-height: 1.15;">
+            Todo lo que una marca necesita para <em style="font-style: italic;">conectar de verdad.</em>
+          </h2>
+
+          <div class="grid-3">
+            <article class="card-pillar">
+              <h3>Estrategia</h3>
+              <p>Definimos el propósito, posicionamiento y dirección de la marca, creando una base sólida que guía cada decisión.</p>
+            </article>
+            <article class="card-pillar">
+              <h3>Diseño</h3>
+              <p>Construimos una identidad que integra lo visual y lo verbal, asegurando coherencia en lo que la marca es y cómo se expresa.</p>
+            </article>
+            <article class="card-pillar">
+              <h3>Experiencia</h3>
+              <p>Diseñamos cómo la marca se vive en cada punto de contacto, generando conexión, coherencia y relaciones significativas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Acordeón del Proceso -->
+      <section class="container" style="padding-top: 3rem; padding-bottom: 4rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">Branding</span>
+          <button class="btn-pill-outline" data-tab-target="servicios" style="padding: 0.35rem 1rem; font-size: 0.75rem;">Ver más ↗</button>
+        </div>
+        <p style="color: #666; font-size: 0.9rem;">Así es nuestro</p>
+        <h3 class="font-serif" style="font-size: 2rem; margin-bottom: 2rem;">Proceso de branding:</h3>
+
+        <div class="accordion-list">
+          <div class="accordion-item open">
+            <button class="accordion-trigger">
+              <span class="accordion-title">Conexión</span>
+              <span class="accordion-icon">−</span>
+            </button>
+            <div class="accordion-body">
+              <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Brief · Videollamada · Inicio</h4>
+              <p style="color: #555; max-width: 700px;">Todo comienza contigo. Nos conectamos con tu historia, tu visión y la esencia de tu marca. A través de una videollamada y un brief estratégico, entendemos a profundidad tu proyecto para construir desde lo auténtico.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger">
+              <span class="accordion-title">Estrategia</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; font-style: italic;">Propósito · Concepto · Esencia</h4>
+              <p style="color: #555; max-width: 700px;">Antes de diseñar, definimos. Creamos el propósito, el concepto y la personalidad de tu marca. Porque no existe identidad visual sin una idea clara que la sostenga.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger">
+              <span class="accordion-title">Identidad</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; font-style: italic;">Diseño · Creatividad · Sistema visual</h4>
+              <p style="color: #555; max-width: 700px;">Le damos forma a tu marca. Diseñamos una identidad visual coherente, estratégica y memorable. Desde el logotipo hasta su lenguaje visual completo, cada elemento tiene un porqué.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger">
+              <span class="accordion-title">Expansión</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; font-style: italic;">Aplicaciones · Papelería · Digital</h4>
+              <p style="color: #555; max-width: 700px;">Llevamos tu marca a la realidad. Creamos las piezas y aplicaciones necesarias para que tu identidad cobre vida en cada espacio, adaptándose a tu proyecto y sus necesidades.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger">
+              <span class="accordion-title">Proyección</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; font-style: italic;">Entrega · Acompañamiento · Claridad</h4>
+              <p style="color: #555; max-width: 700px;">Tu marca está lista para salir al mundo. En una sesión final, te entregamos todos los archivos, te enseñamos a usarlos y te damos las herramientas para proyectarte con claridad, coherencia y seguridad.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Liderazgo Sara Duque -->
+      <section class="container" style="padding-bottom: 5rem; border-top: 1px solid var(--color-border); padding-top: 3rem;">
+        <div class="grid-2" style="align-items: center;">
+          <div style="border-radius: 24px; overflow: hidden; aspect-ratio: 4/5;">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD89AwQKCdNPTIBOsV840yknCGL6JEfUsYdO5PWXPvcN4FCy-bcXZDkIEhnlVBcw5i_AknKSt6I3AILG5y1YiJQRgYI1tamUE3ePSzAXnrG4nD5HxxlOH7mRxp5sROeY7B604ozm4dGBDXI6ZaQVcv4bIEn-7qRHP1U7c1uUL4ZafRJXxMSR4-C4uWFLggKNF4SmcfH2rWgXI1jqbOPcuJZBWU0dSDyirdwalNYM5Cihj8UwossISaqIA" alt="Sara Duque" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div>
+            <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-gold); font-weight: 600;">Dirección de Autor</span>
+            <h2 class="font-serif" style="font-size: 2.75rem; font-weight: 400; margin-top: 0.5rem; margin-bottom: 1.5rem;">Liderado por Sara Duque</h2>
+            <div style="color: #555; line-height: 1.8; space-y: 1rem;">
+              <p style="margin-bottom: 1rem;">Empecé Nexuss con la idea de crear marcas que realmente conecten. Creo en el diseño como una forma de dar vida, construir identidad y transformar cómo una marca se percibe en el mundo.</p>
+              <p>Esto es solo el comienzo de lo que NEXUSS puede llegar a ser... y de lo que podemos construir juntos.</p>
+            </div>
+            <div style="margin-top: 2rem;">
+              <button class="btn-pill-primary" data-tab-target="nosotros" style="background-color: var(--color-gold); border-color: var(--color-gold);">Sobre nosotros →</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ----------------------------------------
+         PESTAÑA 2: NOSOTROS
+         ---------------------------------------- -->
+    <section class="tab-pane" id="tab-nosotros">
+      <div class="container" style="padding-top: 3rem; padding-bottom: 4rem;">
+        <div class="grid-2" style="align-items: start;">
+          <div>
+            <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-gold); font-weight: 600;">Sobre Nexuss</span>
+            <h1 class="font-serif" style="font-size: 2.75rem; font-weight: 400; margin-top: 0.5rem; margin-bottom: 1.5rem;">Diseñamos marcas que nos gustaría ver conectar</h1>
+            <div style="color: #555; line-height: 1.8;">
+              <p style="margin-bottom: 1rem;">No encontré el diseño por casualidad, encontré una forma de crear con intención.</p>
+              <p style="margin-bottom: 1rem;">Lo que empezó como curiosidad se convirtió en una visión: construir marcas que no solo existan, sino que conecten.</p>
+              <p style="margin-bottom: 1rem;">Con el tiempo entendí que el branding va más allá de lo visual — es esencia, dirección y la forma en la que una marca se vive.</p>
+              <p style="margin-bottom: 1rem;">A través de NEXUSS, desarrollo marcas con propósito, trabajando cada proyecto de forma cercana y estratégica.</p>
+              <p>Hoy, estoy enfocado en colaborar con marcas con personalidad, intención y algo real que decir.</p>
+            </div>
+            <div style="margin-top: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+              <span style="font-size: 0.9rem; font-weight: 500; color: #141414;">Att.</span>
+              <div>
+                <img src="/firma-sara-duque.png" alt="Firma Sara Duque" style="height: 52px; width: auto; object-fit: contain;">
+                <span style="display: block; font-size: 0.75rem; color: #777; font-style: italic;">Sara Duque · Directora Creativa</span>
+              </div>
+            </div>
+          </div>
+          <div style="border-radius: 28px; overflow: hidden; aspect-ratio: 4/5;">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAboUkmB3f2hDk5OFysR92-Bjp4KRA0M60aP7S1-a5hs_HimFRR30NgInSmI6iJjUipURqwGQnehPB88Wh43RHMotsojOQKIRDYW8D-by4e5Y9Gxbtlo62NqQ5ceAfgswXP-5L6kHQyEwSgx-QruhHV6nIyucmAsxglM2YhImdtCscytSaS_pAa7ro0eufzygnSZl38A2ALNMC5l_s1tkyEq3t_P6e6f6EKr0e2QOHEGBveM9SS10hHQQ" alt="Nexuss Portrait" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Misión y Visión -->
+      <section style="background-color: #f3f2ee; padding: 4rem 0;">
+        <div class="container grid-2">
+          <div style="background-color: #eaeae7; padding: 2.5rem; border-radius: 28px;">
+            <h3 class="font-serif" style="font-size: 2rem; margin-bottom: 1rem;">Misión</h3>
+            <p style="color: #555; line-height: 1.7; font-size: 0.95rem;">
+              Como consultoría de branding multidisciplinaria que integra comunicación, estrategia y diseño con experiencia, creamos marcas duraderas que conectan emocionalmente con las personas e impulsan el valor del negocio en todos sus puntos de contacto.
+            </p>
+          </div>
+          <div style="background-color: var(--color-gold); color: #ffffff; padding: 2.5rem; border-radius: 28px;">
+            <h3 class="font-serif" style="font-size: 2rem; margin-bottom: 1rem; color: #ffffff;">Visión</h3>
+            <p style="color: rgba(255,255,255,0.9); line-height: 1.7; font-size: 0.95rem;">
+              Ser el estudio referente que redefine el lujo consciente y el branding emocional en el ámbito internacional, aportando rigor tipográfico, profundidad sensorial y autenticidad.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Banner de Cita de Autor -->
+      <section style="background-color: var(--color-gold); color: #ffffff; padding: 5rem 0;">
+        <div class="container">
+          <blockquote class="font-serif" style="font-size: 2.5rem; font-weight: 300; line-height: 1.25; max-width: 1100px;">
+            “Creo en marcas que conectan, que tienen propósito y que dejan algo en quien las vive. Para mí, de eso se trata el diseño.”
+          </blockquote>
+        </div>
+      </section>
+    </section>
+
+    <!-- ----------------------------------------
+         PESTAÑA 3: SERVICIOS
+         ---------------------------------------- -->
+    <section class="tab-pane" id="tab-servicios">
+      <div class="banner-lemonade" style="margin-top: 0; padding-top: 4rem; padding-bottom: 4rem;">
+        <div class="container">
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: #49491a; font-weight: 600;">Especialidades</span>
+          <h1 class="font-serif" style="font-size: 3.5rem; margin-top: 0.5rem; margin-bottom: 1.5rem; font-weight: 400;">
+            Damos vida a marcas que <em style="font-style: italic;">conectan.</em>
+          </h1>
+          <p style="max-width: 800px; font-size: 1.15rem; color: #222; line-height: 1.6;">
+            Somos una agencia creativa especializada en branding y rebranding. Construimos marcas desde su esencia: estrategia, identidad y experiencia, transformando ideas en conexiones reales.
+          </p>
+          <div style="margin-top: 2rem;">
+            <button class="btn-pill-primary" data-tab-target="contacto">Contáctanos ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Módulo de Branding con Medalla Giratoria -->
+      <div class="container" style="padding: 4rem 0;">
+        <div class="grid-2" style="align-items: center; position: relative;">
+          <div style="background-color: #ffffff; padding: 3rem; border-radius: 36px; border: 1px solid var(--color-border); text-align: center;">
+            <h2 class="font-serif" style="font-size: 2.75rem; margin-bottom: 1rem;">Branding</h2>
+            <p style="font-weight: 600; margin-bottom: 1rem;">Creamos marcas desde su esencia.</p>
+            <p style="color: #666; font-size: 0.95rem; line-height: 1.7;">
+              En Nexuss no diseñamos solo lo visual. Construimos marcas completas con estrategia, identidad y una forma auténtica de conectar con las personas.
+            </p>
+          </div>
+          <div style="border-radius: 36px; overflow: hidden; aspect-ratio: 16/10;">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl-2cnfoa0y-Ag6nPmGZmlaqrnnO066vbrKD7xWUsEzZKQCwFtSaxeTK4l3rv3VT2yBqOnjZDzopDixVcp_LVBFtbqMZVm5lJ4YD7cVMP_esN3H3SxX_zuvAbeQYLs0r4rztfw6lwEUpYLqwh6hbr7t6yRTlTiEGuTkglTmfDYsYC7iHIjIo1Vodzd6KbLozWeIyLEtXMMJyZc6mHYWj1gQd0dtclrdrvZW-GMHUx4kNiOQKKJfJ89lw" alt="Brand visual system" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <!-- ¿Por qué necesitas branding? -->
+      <section style="background-color: #6E6D6B; color: #ffffff; padding: 5rem 0;">
+        <div class="container">
+          <h2 class="font-serif" style="font-size: 2.75rem; text-align: center; margin-bottom: 3.5rem; font-weight: 400;">
+            ¿Por qué necesitas <em style="font-style: italic;">branding?</em>
+          </h2>
+          <div class="grid-3" style="color: #222;">
+            <div style="background-color: #ffffff; border-radius: 28px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">No es un logo.<br>Es lo que proyectas.</h3>
+                <p style="color: #666; font-size: 0.9rem; line-height: 1.6;">El branding define cómo te perciben, cómo te recuerdan y por qué te eligen.</p>
+              </div>
+              <p style="font-size: 0.8rem; color: #888; border-top: 1px solid #eee; padding-top: 1rem; margin-top: 1.5rem;">Sin una base clara, todo comunica... pero nada conecta.</p>
+            </div>
+            <div style="background-color: #ffffff; border-radius: 28px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">No es vender más.<br>Es vender mejor.</h3>
+                <p style="color: #666; font-size: 0.9rem; line-height: 1.6;">Cuando tu marca está bien construida, deja de competir por precio y genera valor real.</p>
+              </div>
+              <p style="font-size: 0.8rem; color: #888; border-top: 1px solid #eee; padding-top: 1rem; margin-top: 1.5rem;">El branding convierte atención en decisión.</p>
+            </div>
+            <div style="background-color: #ffffff; border-radius: 28px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">No es estar.<br>Es trascender.</h3>
+                <p style="color: #666; font-size: 0.9rem; line-height: 1.6;">Las marcas que perduran no son las más visibles, sino las más coherentes en el tiempo.</p>
+              </div>
+              <p style="font-size: 0.8rem; color: #888; border-top: 1px solid #eee; padding-top: 1rem; margin-top: 1.5rem;">No se trata de existir hoy, sino de permanecer mañana.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ----------------------------------------
+         PESTAÑA 4: PORTAFOLIO Y CASOS
+         ---------------------------------------- -->
+    <section class="tab-pane" id="tab-portafolio">
+      
+      <!-- Vista 1: Índice Principal del Portafolio -->
+      <div id="portfolio-index">
+        <div class="container" style="padding-top: 3rem; padding-bottom: 2rem; text-align: center;">
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; color: #888; font-weight: 600;">PORTAFOLIO 2025 - 2026</span>
+          <h1 class="font-serif" style="font-size: 3.5rem; font-weight: 400; margin-top: 0.5rem; margin-bottom: 1rem;">Nuestro trabajo</h1>
+          <p style="color: #666; max-width: 650px; margin: 0 auto; line-height: 1.6;">
+            De la esencia al proceso, y del proceso a la proyección. Así es como cada marca que creamos cobra sentido y conexión.
+          </p>
+
+          <!-- Filtros de categoría -->
+          <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 2rem; padding: 1rem 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+            <button class="nav-link active font-bold" data-filter="todos">Todos</button>
+            <button class="nav-link" data-filter="branding">Branding</button>
+            <button class="nav-link" data-filter="rebranding">Rebranding</button>
+            <button class="nav-link" data-filter="direccion-creativa">Dirección creativa</button>
+            <button class="nav-link" data-filter="identidad-visual">Identidad Visual</button>
+          </div>
+        </div>
+
+        <!-- Grilla de Proyectos -->
+        <div class="container" style="padding-bottom: 5rem;">
+          <div class="grid-2">
+            <!-- Caso 1: Aura -->
+            <div class="project-card" data-category="identidad" onclick="openCaseStudy('aura')" style="cursor: pointer; display: flex; flex-direction: column;">
+              <div style="aspect-ratio: 16/10; border-radius: 28px; overflow: hidden; background: #000; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0n511VgbG9Y7Mx3Fw3lmGtLtkwhI-5EMYscviIT8vdVJW7s2qMfrVmzDHjMlSGKz9bASUTHrXs3SuGI5GLGv9oNIUJxt6VtePDPUupYsMPjCSs4Ll4mF8WF_a6EdGsqa6CMJ_cYLsYJLKd3qkoN0G5NpPZGzTEUW3HN3DrdneigDIY5Uw2xFWhZWLr4zyqxCclkfWMyxFNkJz9pOd6p0xVNHW9UzwOBLKCWj-CaGiHvYgNSaSRSzZcQ" alt="Aura" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <h3 class="font-serif" style="font-size: 1.75rem; color: var(--color-tangerine); margin-top: 1rem;">Aura</h3>
+              <p style="color: #666; font-size: 0.95rem;">Experiencia sensorial • Rebranding</p>
+            </div>
+
+            <!-- Caso 2: Lumen -->
+            <div class="project-card" data-category="hospitality" onclick="openCaseStudy('lumen')" style="cursor: pointer; display: flex; flex-direction: column;">
+              <div style="aspect-ratio: 16/10; border-radius: 28px; overflow: hidden; background: #000; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzbtQ0VpaZ3a4i39yNakrsz0_Hwfv7_5nE1Gybom5O7fP5rzjPDa0SyfBOasm171aiGSXkhjTXH1565aIaF6eR94yCby-_cyCGgDD_mEeOHp5wRYxfYVyjustAjLDLHzWJ-MElP-b_3EVnY452t-e-mrSW9-rfl7gXS6hus_pN2rORN8Tg5T6dxhOYdcnsObkSdCu1t54Uk3i4CrtnRYnNlXyjWpafblxPFOXPBvsU0aSiduakjEsqnw" alt="Lumen" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <h3 class="font-serif" style="font-size: 1.75rem; color: var(--color-tangerine); margin-top: 1rem;">Lumen</h3>
+              <p style="color: #666; font-size: 0.95rem;">Hospitality & Luxury Bar</p>
+            </div>
+
+            <!-- Caso 3: Botanica -->
+            <div class="project-card" data-category="identidad" onclick="openCaseStudy('botanica')" style="cursor: pointer; display: flex; flex-direction: column;">
+              <div style="aspect-ratio: 16/10; border-radius: 28px; overflow: hidden; background: #000; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFS7rNCrcW3CnBy11XGUvDGQxZchu1x1kD5wm1XP74xe3_Vug7x4cdKBQOeR7nzuiQmOINsxoUTMVEQd-aAYLhUDzHc74aaJIigJ0QW_jNHN7LcEmsVOWWBJzNdhHfghNMHclqA1hvOIygNCXB2yDWboeszdgUbIDbrAhtmXIbdsv0h_FVMdzx14HLuPyqjw3fFK80Rs59QFzLIEzenhQVJqP9AEyKoM00f-4il8FKZ7klzAigg7iaAA" alt="Botanica" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <h3 class="font-serif" style="font-size: 1.75rem; color: var(--color-tangerine); margin-top: 1rem;">Botanica</h3>
+              <p style="color: #666; font-size: 0.95rem;">Artisanal Spirits & Organic Goods</p>
+            </div>
+
+            <!-- Caso 4: Aurora -->
+            <div class="project-card" data-category="editorial" onclick="openCaseStudy('aurora')" style="cursor: pointer; display: flex; flex-direction: column;">
+              <div style="aspect-ratio: 16/10; border-radius: 28px; overflow: hidden; background: #000; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5iKeZ2NaMSdeIN_-ibjZcqvcbspWpmjN6TESIymd0h9wakAXCGffNrb7222ft-8LyNWX7Wb4Lmeu223P3aHFLF-5707RCACOuSPUOvLi6-8oDi1E7v_MoI_ZP6Ma-UV2dVGI-cvUN6gWm0gyaDRI61XvTAGgp-ScTjApjuieI-bLsSirts9unH16JMF82T7HubZzWZCv9VvK2agPxxFAxLNPJBxLhUUCvqn3ELwvDA5y5amyhV8RPyw" alt="Aurora" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <h3 class="font-serif" style="font-size: 1.75rem; color: var(--color-tangerine); margin-top: 1rem;">Aurora</h3>
+              <p style="color: #666; font-size: 0.95rem;">Ceramics & Homeware Atelier</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vista 2: Caso de Estudio AURA en Detalle -->
+      <article class="case-study-view" id="case-aura" style="display: none;">
+        <div class="container" style="padding: 1rem 0; display: flex; justify-content: space-between;">
+          <button class="btn-pill-outline" onclick="backToPortfolioIndex()">← Regresar al portafolio</button>
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">Caso 04 • Identidad Sensorial</span>
+        </div>
+
+        <section style="background-color: #E6E8B4; color: #1e2008; padding: 4rem 0;">
+          <div class="container">
+            <h1 class="font-serif" style="font-size: 2.75rem; max-width: 900px; line-height: 1.2;">
+              En un mundo saturado de estímulos, donde todo compite por ser visto, las experiencias han dejado de sentirse.
+            </h1>
+            <p style="margin-top: 1.5rem; max-width: 800px; line-height: 1.7; font-size: 1.05rem;">
+              Las marcas se construyen desde lo visual, pero pocas logran conectar desde lo sensorial. Así nace AURA: una exploración visual que rompe con lo convencional y traduce las sensaciones en identidad.
+            </p>
+          </div>
+        </section>
+
+        <section class="container" style="padding: 4rem 0;">
+          <div style="aspect-ratio: 21/9; border-radius: 32px; overflow: hidden; margin-bottom: 2rem;">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB35kFuuKUEllsiSI9CjgL9_H3w5g_9q9f0SvIqE1hYqZXpPUx2jM2iVI84FE-jXMCD1UCUBQM8LAhTXHhGPGo4qNNoHU3nyMb5SLUJoA3fpH4U7YjtG50NsH-ixrlXAgGVvRM8pjlSLofbOdieznVZ2fJbtiqoMgDIEMN27JSSsRyP_R55u67GwGnUAKCX38I-cQop6m7tcJLptQ6mILvLgnvFYpdeP3FsExEiw_FtnsARLAvnCgU5Jg" alt="Aura Packaging" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="grid-2">
+            <div style="aspect-ratio: 4/3; border-radius: 28px; overflow: hidden;">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA4JkhLt9z-NiIFR1qN3OzKTLJ8cL6NCzuZaRnKVmmt-hHScAq8ypcLCOxAKk5M6RPaG_XmF5HxogE4fC1Uk6yeXcm0E6vRzQMDJWHklchjbhTc5BAPm5H8q-2dWHQlz7_0SqYl2sJn_UpkcZdRljPu-suZEiO2cve2kFBYy73OTQhonIGadW6DHpsefaq3F9gf_ahBue8rAGAeToDhg6o__ncah0FBexqcQcd__Py6GClJJ7e6DlcAA" alt="Aura Papeleria" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="aspect-ratio: 4/3; border-radius: 28px; overflow: hidden;">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUz81weJuZGFK4s7ZABRItTHA4wkIXafix0LeJWGlE8K1N-syEOojMFob35vRJ3uEW_3aG-74965-egshavEd7_XoRIAkPnAz08w6ch3ZojP9Xy9KGwrpal_58CfKCtDX3MHr4cD-s1UcnTLi-G9WdBTc6DiF7pEO2gJeb2nStXn4QkCOueFGVH0kbazKCvLAAYAMtwAtNxeL85qUI7sAp1vb-j32yMawsS_MENIYCTUhsPkKGdYr26A" alt="Aura Espectro" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Vista 3: Caso de Estudio LUMEN en Detalle -->
+      <article class="case-study-view" id="case-lumen" style="display: none;">
+        <div class="container" style="padding: 1rem 0; display: flex; justify-content: space-between;">
+          <button class="btn-pill-outline" onclick="backToPortfolioIndex()">← Regresar al portafolio</button>
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">Caso 02 • Hospitality & Nocturno</span>
+        </div>
+
+        <section style="background-color: #232323; color: #ffffff; padding: 4rem 0;">
+          <div class="container">
+            <h1 class="font-serif" style="font-size: 2.75rem; max-width: 900px; line-height: 1.2;">
+              En la penumbra de la noche, donde el exceso de ruido distorsiona la experiencia, la intimidad se convierte en el máximo lujo.
+            </h1>
+            <p style="margin-top: 1.5rem; max-width: 800px; line-height: 1.7; font-size: 1.05rem; color: #ccc;">
+              Lumen nace como un santuario para los sentidos: cócteles botánicos de autor, iluminación cálida de ámbar y un diseño acústico que invita a la pausa.
+            </p>
+          </div>
+        </section>
+
+        <section class="container" style="padding: 4rem 0;">
+          <div style="aspect-ratio: 21/9; border-radius: 32px; overflow: hidden; margin-bottom: 2rem;">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_tduNqJizNaK2f8R9tupEeC5le16sILvrZQUUAG3UOWwnFhQsz6m0_Yl3GZ_lBrHHygLiKcouPwtwLys5DyOF-uo3v-VS80vwszeqfXeTz5R-23Wy4mNQU87Ghi88-8_fzY-PkppPa20jv5mzo3TCoUdaYEv-GsT-JjUFxEGWg-TL-2mzTJzqdtl7N7xjf9eGDp7PmbC0NtlShcP_EHJkRTIHlkQ-GupzHQ_hUUHXMHQchq0GPYymDg" alt="Lumen Interior" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </section>
+      </article>
+
+      <!-- Vista 4: Caso de Estudio BOTANICA en Detalle -->
+      <article class="case-study-view" id="case-botanica" style="display: none;">
+        <div class="container" style="padding: 1rem 0; display: flex; justify-content: space-between;">
+          <button class="btn-pill-outline" onclick="backToPortfolioIndex()">← Regresar al portafolio</button>
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">Caso 03 • Bebidas Botánicas</span>
+        </div>
+
+        <section style="background-color: #E5D8C9; color: #252525; padding: 4rem 0;">
+          <div class="container">
+            <h1 class="font-serif" style="font-size: 2.75rem; max-width: 900px; line-height: 1.2;">
+              La tierra no necesita artificios, solo reverencia y maestría en la destilación.
+            </h1>
+            <p style="margin-top: 1.5rem; max-width: 800px; line-height: 1.7; font-size: 1.05rem;">
+              Botanica redescubre botánicos nativos y recetas ancestrales para concebir elixires puros, sostenibles y profundamente conectados con su origen.
+            </p>
+          </div>
+        </section>
+
+        <section class="container" style="padding: 4rem 0;">
+          <div style="aspect-ratio: 21/9; border-radius: 32px; overflow: hidden; margin-bottom: 2rem;">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_T2flTQKWgBPwVAf2cK20ZqNgYsHY9JMrJEn7LtYREHJMmYVqWq_6IEZWtFO15_GwqZp-eUV3NUVUYMnxFVmhU3bgR6Q93WAcGUQTloSfYmlIiorsgsDipIRX7eRpOmiShmS5AoAiSPnZyLiNJ_qdZpvvR4w_SrvijJL7i1Dubj9LAsIbTbeYa4L-7CaOT6Gzbryg-heizSkb1JAMivO3vojIrKZ92Kr9gYMS2fxzPqWO3LkA5QHosQ" alt="Botanica Gama" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </section>
+      </article>
+
+      <!-- Vista 5: Caso de Estudio AURORA en Detalle -->
+      <article class="case-study-view" id="case-aurora" style="display: none;">
+        <div class="container" style="padding: 1rem 0; display: flex; justify-content: space-between;">
+          <button class="btn-pill-outline" onclick="backToPortfolioIndex()">← Regresar al portafolio</button>
+          <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">Caso 04 • Diseño Artesanal</span>
+        </div>
+
+        <section style="background-color: #DFE1A6; color: #1b1c1a; padding: 4rem 0;">
+          <div class="container">
+            <h1 class="font-serif" style="font-size: 2.75rem; max-width: 900px; line-height: 1.2;">
+              Cada curva imperfecta guarda la memoria de las manos que moldearon el barro.
+            </h1>
+            <p style="margin-top: 1.5rem; max-width: 800px; line-height: 1.7; font-size: 1.05rem;">
+              Aurora Ceramics celebra la calma, la imperfección orgánica del wabi-sabi y los objetos concebidos para habitar hogares con alma.
+            </p>
+          </div>
+        </section>
+
+        <section class="container" style="padding: 4rem 0;">
+          <div style="aspect-ratio: 21/9; border-radius: 32px; overflow: hidden; margin-bottom: 2rem;">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtyCLDxTgIm0z9iKNZMqP6btwy10yf0E5DDeOWnpLnp2ltxF_jmsGCxFghz6uwW5-wy-GNEdhb6vuLdXSRPmFzCcj-VsMZuksF2E2bC6R0vIK1IIQDLOYZ1MOZSG4Jt0lqAS1egSuwNTTHqf3i_X0cOoRhzdP-7BNpeRheRReOMErad06zGtkSlKyG56M2-Ew7cvniRVfnfP27ILApTqylP-X-ZhaEklQ3wsbuy6MMAWkTd1CMOhqgSA" alt="Aurora Coleccion" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </section>
+      </article>
+
+    </section>
+
+    <!-- ----------------------------------------
+         PESTAÑA 5: CONTACTO
+         ---------------------------------------- -->
+    <section class="tab-pane" id="tab-contacto">
+      <!-- Cabecera Editorial -->
+      <section style="background-color: #EAE8E2; padding: 4rem 0; border-bottom: 1px solid #dedbd3;">
+        <div class="container grid-2" style="align-items: start;">
+          <h1 class="font-serif" style="font-size: 3rem; font-weight: 700; line-height: 1.1;">
+            Las ideas que valen la pena merecen ser contadas.
+          </h1>
+          <div style="color: #333; line-height: 1.7;">
+            <p style="margin-bottom: 1rem;">Cuéntanos sobre tu proyecto y empecemos a construir algo que realmente represente lo que quieres crear. ¡Escríbenos y conectemos tus ideas!</p>
+            <p>Para cualquier otra consulta directa:<br><strong>nexuss.branding.ss@gmail.com</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulario Estructurado -->
+      <div class="container" style="padding: 4rem 1.5rem; max-width: 820px;">
+        <form id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="form-nombre">Nombre *</label>
+            <input class="form-input" id="form-nombre" required type="text">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-apellido">Apellido *</label>
+            <input class="form-input" id="form-apellido" required type="text">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-email">Email *</label>
+            <input class="form-input" id="form-email" required type="email">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-telefono">Teléfono</label>
+            <input class="form-input" id="form-telefono" type="tel">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">¿Qué servicio te interesa? *</label>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+              <label><input type="checkbox" name="servicios" value="Branding"> Branding</label>
+              <label><input type="checkbox" name="servicios" value="Rebranding"> Re-branding</label>
+              <label><input type="checkbox" name="servicios" value="Direccion"> Dirección creativa</label>
+              <label><input type="checkbox" name="servicios" value="Identidad"> Identidad Visual</label>
+              <label><input type="checkbox" name="servicios" value="Consultoria"> Consultoría</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-proyecto">Cuéntanos más sobre tu proyecto o marca *</label>
+            <textarea class="form-textarea" id="form-proyecto" required rows="3"></textarea>
+          </div>
+
+          <div style="margin-top: 2rem; text-align: right;">
+            <button type="submit" class="btn-pill-primary" style="padding: 0.8rem 2.5rem; border-radius: 4px;">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal de Éxito de Formulario -->
+  <div id="form-success-modal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px); z-index: 200; align-items: center; justify-content: center; padding: 1.5rem;">
+    <div style="background: #FAF9F5; border-radius: 28px; max-width: 500px; width: 100%; padding: 2.5rem; text-align: center; border: 1px solid #ccc;">
+      <h3 class="font-serif" style="font-size: 2rem; margin-bottom: 1rem;">¡Gracias, <span id="modal-client-name"></span>!</h3>
+      <p style="color: #555; margin-bottom: 2rem; line-height: 1.6;">Hemos recibido tu solicitud. Nuestro equipo creativo se pondrá en contacto contigo en menos de 24 horas.</p>
+      <button class="btn-pill-primary" onclick="closeSuccessModal()">Aceptar</button>
+    </div>
+  </div>
+
+  <!-- Modal Legal -->
+  <div id="legal-modal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px); z-index: 200; align-items: center; justify-content: center; padding: 1.5rem;">
+    <div style="background: #FAF9F5; border-radius: 28px; max-width: 650px; width: 100%; padding: 2.5rem; border: 1px solid #ccc; max-height: 80vh; overflow-y: auto;">
+      <h3 class="font-serif" id="legal-modal-title" style="font-size: 2rem; margin-bottom: 1rem;">Documento Legal</h3>
+      <div id="legal-modal-body" style="color: #555; line-height: 1.7; margin-bottom: 2rem;"></div>
+      <div style="text-align: right;">
+        <button class="btn-pill-primary" onclick="closeLegal()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       3. PIE DE PÁGINA SEMÁNTICO (FOOTER)
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <button class="brand-logo" data-tab-target="inicio" style="margin-bottom: 0.5rem;">
+            <img src="/logosimbolo-nexuss.png" alt="Nexuss" style="height: 52px; width: auto; object-fit: contain;">
+          </button>
+          <p style="font-size: 0.85rem; color: #666; max-width: 280px;">Estudio creativo especializado en branding, dirección de arte y arquitectura de marcas.</p>
+        </div>
+        <div class="footer-nav">
+          <button data-tab-target="servicios">Servicios</button>
+          <button data-tab-target="nosotros">Nosotros</button>
+          <button data-tab-target="contacto">Contacto</button>
+          <button data-tab-target="portafolio">Portafolio</button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.8rem;">
+          <span style="font-weight: 600; text-transform: uppercase;">Legal</span>
+          <a href="#" onclick="openLegal('terminos'); return false;">Términos y condiciones</a>
+          <a href="#" onclick="openLegal('cookies'); return false;">Política de cookies</a>
+          <a href="#" onclick="openLegal('privacidad'); return false;">Política de privacidad</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.8rem;">
+          <span style="font-weight: 600; text-transform: uppercase;">Síguenos</span>
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener">Youtube ↗</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Nexuss Studio. Todos los derechos reservados.</p>
+        <p>Diseñado con propósito e intención.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script de Comportamiento en JavaScript Vainilla -->
+  <script src="app.js"></script>
+</body>
+</html>

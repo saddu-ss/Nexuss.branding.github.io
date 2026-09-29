@@ -1,0 +1,6 @@
+{
+  "name": "Nexuss — Estudio Creativo de Branding & Diseño Estratégico",
+  "description": "Plataforma web dinámica y responsive para Nexuss Studio: agencia creativa especializada en branding, rebranding, dirección de arte y diseño de experiencias.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

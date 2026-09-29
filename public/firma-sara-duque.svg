@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" fill="none">
+  <g stroke="#1b1c1a" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Diagonal ascender & descender with fluid baseline waves and right loop -->
+    <path d="M 175 315 L 305 105 C 307 100 310 102 308 107 L 242 278 C 241 283 246 284 252 280 C 258 274 266 270 272 275 C 276 279 281 280 286 275 C 298 262 334 225 338 200 C 342 178 316 178 285 184" 
+          stroke-width="3.6" />
+    <!-- Horizontal strike with tapered precision -->
+    <path d="M 160 216 C 195 212 250 198 310 190 C 360 183 410 176 448 174" 
+          stroke-width="3.2" />
+  </g>
+</svg>
